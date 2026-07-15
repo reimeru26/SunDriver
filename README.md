@@ -3,7 +3,7 @@ SunDriver is two things:
 - a Python software for the design of a photovoltaic system that charges a scooter
 - a beginners lecture for Python programming
 
-Check out the release at the right hand side of this webpage.
+__=> Check out the release at the right hand side of this webpage.__
 
 ## The Software
 (see SunDriver.html)
