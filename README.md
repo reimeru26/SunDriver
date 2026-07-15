@@ -7,6 +7,7 @@ Check out the release at the right hand side of this webpage.
 
 ## The Software
 (see SunDriver.html)
+
 SunDriver calculates local power generation by a photovoltaic system. 
 The power is stored in a battery. The battery is used to charge an electric scooter based 
 on a drive cycle per week. The location for the photovoltaic system can be choosen
@@ -19,6 +20,7 @@ The following software needs to be installed on your computer:
 
 ## The Lecture
 (see SunDriver-lecture.html)
+
 Most students in Engineering need some skills in programming. 
 This course targets at those, who want to have a minimum setup: 
 just a computer with a plain text editor. 
