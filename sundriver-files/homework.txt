@@ -1,0 +1,103 @@
+# Students task #
+
+    (This is for message 1.) Modify your decoding program in a way that it tests for all possible variants of the shift algorithm. Generate text output and decide, which shift was used for encoding.
+    This is for message 2.) Modify you program in order to process text which may also contain capital letters and the characters ' . , ? ' (dot, comma, question mark).Hint: For capital letters you may check the functions for strings: string.isupper() or string.islower()
+    Modify your program in the way that it produces an error message, if the original text contains characters that are not recognized. Decide, what your program should do in this case.
+
+
+# Example workflow #
+
+The original message is:
+this is an example text for the lecture technology of circular economy!
+
+This message is encrypted with shift = 3: (This is like what you have got from me.)
+wklv lv dq hadpsoh whaw iru wkh ohfwxuh whfkqrorjb ri flufxodu hfrqrpb!
+
+Your program for decoding should check all possible shifts and create some output.
+You can read and understand the message if you found the 'correct' value for the shift.
+The key for the solution is to create a loop around your decoding program. 
+You can decide to follow the last lecture and put the decoding part into a function.
+This function then can be called from within a loop. But there are also other ways to do it.
+The output of your program could look like (just a suggestion) this:
+
+
+1 
+vjku ku cp gzcorng vgzv hqt vjg ngevwtg vgejpqnqia qh ektewnct geqpqoa!
+  -----------------------  
+2 
+uijt jt bo fybnqmf ufyu gps uif mfduvsf ufdiopmphz pg djsdvmbs fdpopnz!
+  -----------------------  
+3 
+this is an example text for the lecture technology of circular economy!
+  -----------------------  
+4 
+sghr hr zm dwzlokd sdws enq sgd kdbstqd sdbgmnknfx ne bhqbtkzq dbnmnlx!
+  -----------------------  
+5 
+rfgq gq yl cvyknjc rcvr dmp rfc jcarspc rcaflmjmew md agpasjyp camlmkw!
+  -----------------------  
+6 
+qefp fp xk buxjmib qbuq clo qeb ibzqrob qbzeklildv lc zfozrixo bzlkljv!
+  -----------------------  
+7 
+pdeo eo wj atwilha patp bkn pda haypqna paydjkhkcu kb yenyqhwn aykjkiu!
+  -----------------------  
+8 
+ocdn dn vi zsvhkgz ozso ajm ocz gzxopmz ozxcijgjbt ja xdmxpgvm zxjijht!
+  -----------------------  
+9 
+nbcm cm uh yrugjfy nyrn zil nby fywnoly nywbhifias iz wclwoful ywihigs!
+  -----------------------  
+10 
+mabl bl tg xqtfiex mxqm yhk max exvmnkx mxvaghehzr hy vbkvnetk xvhghfr!
+  -----------------------  
+11 
+lzak ak sf wpsehdw lwpl xgj lzw dwulmjw lwuzfgdgyq gx uajumdsj wugfgeq!
+  -----------------------  
+12 
+kyzj zj re vordgcv kvok wfi kyv cvtkliv kvtyefcfxp fw tzitlcri vtfefdp!
+  -----------------------  
+13 
+jxyi yi qd unqcfbu junj veh jxu busjkhu jusxdebewo ev syhskbqh usedeco!
+  -----------------------  
+14 
+iwxh xh pc tmpbeat itmi udg iwt atrijgt itrwcdadvn du rxgrjapg trdcdbn!
+  -----------------------  
+15 
+hvwg wg ob sloadzs hslh tcf hvs zsqhifs hsqvbczcum ct qwfqizof sqcbcam!
+  -----------------------  
+16 
+guvf vf na rknzcyr grkg sbe gur yrpgher grpuabybtl bs pvephyne rpbabzl!
+  -----------------------  
+17 
+ftue ue mz qjmybxq fqjf rad ftq xqofgdq fqotzaxask ar oudogxmd qoazayk!
+  -----------------------  
+18 
+estd td ly pilxawp epie qzc esp wpnefcp epnsyzwzrj zq ntcnfwlc pnzyzxj!
+  -----------------------  
+19 
+drsc sc kx ohkwzvo dohd pyb dro vomdebo domrxyvyqi yp msbmevkb omyxywi!
+  -----------------------  
+20 
+cqrb rb jw ngjvyun cngc oxa cqn unlcdan cnlqwxuxph xo lralduja nlxwxvh!
+  -----------------------  
+21 
+bpqa qa iv mfiuxtm bmfb nwz bpm tmkbczm bmkpvwtwog wn kqzkctiz mkwvwug!
+  -----------------------  
+22 
+aopz pz hu lehtwsl alea mvy aol sljabyl aljouvsvnf vm jpyjbshy ljvuvtf!
+  -----------------------  
+23 
+znoy oy gt kdgsvrk zkdz lux znk rkizaxk zkinturume ul ioxiargx kiutuse!
+  -----------------------  
+24 
+ymnx nx fs jcfruqj yjcy ktw ymj qjhyzwj yjhmstqtld tk hnwhzqfw jhtstrd!
+  -----------------------  
+25 
+xlmw mw er ibeqtpi xibx jsv xli pigxyvi xiglrspskc sj gmvgypev igsrsqc!
+  -----------------------  
+
+
+Another hint: to create a new line in the text output, use the character '\n' -> as example check this:
+b = 'Hello, \n this is a new line!'
+print(b)
