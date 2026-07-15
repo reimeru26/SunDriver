@@ -1,0 +1,305 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <title>SunDriver - The lecture</title>
+</head>
+
+<meta name="author" content="Uwe Reimer" />
+<meta
+  name="description"
+  content="This is part of a lecture at the University of Applied Sciences Emden/Leer Germany, December 2025." />
+
+  
+  
+<table>
+	
+  <tr>
+    <td>  <img src="sundriver-files/sundriver-sm.png"  style="width: 200px;" /> </td>
+    <td> &emsp; &emsp; <h1>SunDriver - The lecture</h1> </td>
+  </tr>
+  
+  <table>
+
+
+<h2>The lecture</h2> 
+
+<ul>
+	<li>Duration: 1 semester (in combination with project management (not included here)</li>
+	<li>Level: Bachelor or Master in Engineering, Material Science, Physics, Chemistry</li>
+	<li>Requirements: NO prior knowledge of programming, it starts at zero</li>
+	<li>Final goal: students should be able to write small programs (read data from file, process data, write output to file) and generate output with graphs and HTML pages </li>
+</ul>
+
+The lecture addresses common tasks for the topic of modelling and simulation within the context
+of engineering. Here, we use the setup of a solar panel system as an example problem and work
+through it like it would be a real project work. 
+This lecture consists of five parts.
+<ol>
+	<li> Introduction to programming and the PYTHON language.</li>
+		<ul>
+			<li>Where to find information? </li> 
+			<li>How to run a program and what are data types? </li> 
+			<li>Working with strings - using text encryption as a working example (the Caesar cipher). </li> 
+		</ul>
+		
+	<li>How to use functions and modules? </li>
+	<li>Create simple plots with MathPlotLib. </li>
+	<li>Built a system model - the Scooter Project. </li>
+		<ul>
+			<li>The scooter model </li>
+			<li>The solar model</li> 
+			<li>The battery model </li> 
+			<li>The system model </li> 
+		</ul>
+	<li>Preparing the final results </li>
+</ol>
+
+<hr>
+
+<h3>1. Introduction</h3> 
+
+<ul>
+	<li> <a href="sundriver-files/01_First_Steps.pdf">01_First_Steps.pdf</a> </li>
+	</br>
+	<li> <a href="sundriver-files/02_Caesar.pdf">02_Caesar.pdf</a> : Simple text encryption</li>
+	<ul>
+		<li> Strings – built in functions length and slice </li>
+		<li> For loop – iterating through strings by position </li>
+		<li> Text indent in Python programming </li>
+		<li> If statement – an expression that evaluates either true or false </li>
+		<li> Files – read text from a file / write text to a file </li>
+		<li> Working example - version 1 : <a href="sundriver-files/caesar-in.py">text input</a> and <a href="sundriver-files/caesar-out.py">text output</a> </li>
+		<li> Working example - version 2 : <a href="sundriver-files/caesar-in-02.py">text input</a> and <a href="sundriver-files/caesar-out-02.py">text output</a> </li>
+		<li> Hint for further study : <a href="sundriver-files/shift-01.py">shift-01.py</a>  </li>
+	</ul>
+</ul>	
+	
+<h3>2. Functions and Modules</h3> 
+<ul>
+	<li> <a href="sundriver-files/03_Functions.pdf">03_Functions.pdf</a> </li>
+	<ul>
+			<li> How to run a Python program (overview) </li>
+			<li> Code writing (text indent, brackets, comments) </li>
+			<li> What is a function? </li>
+			<li> The namespace </li>
+			<li> Given parameters, global statement, return values </li>
+			<li> Working example - version 3 : <a href="sundriver-files/caesar-in-03.py">text input</a> and <a href="sundriver-files/caesar-out-03.py">text output</a> </li>
+			<li> Function example 03 - namespace : <a href="sundriver-files/fun-03.py">fun-03.py</a>  </li>
+			<li> Function example 03 - two parameters : <a href="sundriver-files/fun-05.py">fun-05.py</a>  </li>
+
+	</ul>
+	</br>
+	<li> Students task: Modify the decoding program  </li>
+	<ul>
+		<li> <a href="sundriver-files/homework.txt">Task description and example work flow</a> </li>
+		<li> Here are the two messages:  <a href="sundriver-files/message1.txt">message1.txt</a> and <a href="sundriver-files/message2.txt">message2.txt</a></li>
+		<li> Here are the solutions:  <a href="sundriver-files/solution-m1.py">solution-m1.py</a> and <a href="sundriver-files/solution-m2.py">solution-m2.py</a></li>
+	</ul>
+	
+	</br>
+	<li> <a href="sundriver-files/04_Modules.pdf">04_Modules.pdf</a> : discussion of the students task / introduction of modules in Python </li> 	
+	
+</ul>
+
+<h3>3. Creating simple plots</h3>
+
+Simple plots are great for generating a quick overview. 
+There is a special library for Python:
+<a href="https://matplotlib.org/stable/">Matplotlib for Python</a>.
+</br>
+This lecture provides an introduction, how to create x-y plots as scatter plots and line plots. 
+The lecture is divided into three levels of complexity.
+
+<ul>
+<li> Plot - Level 1 </li>
+	<ul>
+		<li> A set of x-y data </li>
+		<li> Import the Matplotlib library </li>
+		<li> Define plot </li>
+		<li> Name axis </li>
+		<li> Export plot to file </li>
+	</ul>
+
+</br>
+<li> Plot - Level 2 </li>
+	<ul>
+		<li> Size of figure </li>
+		<li> Legend – for using several data sets </li>
+		<li> Placement of legend </li>
+		<li> Scaling the axis </li>
+	</ul>
+
+</br>
+<li> Plot - Level 3</li>
+	<ul>
+		<li> Add a second y-axis </li>
+		<li> Annotations </li>
+		<li> Custom font sizes </li>
+		<li> Custom colors </li>
+	</ul>
+
+</br>
+<li> <a href="sundriver-files/py-plot-lecture.zip">Files for the lecture - plotting</a>  </li>
+<li> <a href="sundriver-files/py-plot.zip"> All files from the lecture</a>  </li>
+<li> <a href="sundriver-files/05_SimplePlots.pdf"> Lectur slides for Simple Plots</a>  </li>
+
+</ul>
+
+<h3>4. System model - the Scooter Project</h3>
+
+<ul>
+	<li> <a href="sundriver-files/06_ProjectPlan.pdf"> Lecture: Planning the project</a> </li> 
+	
+	</br>
+	<li> The scooter model </li>
+		<ul>
+			<li> Workflow for creating the scooter model </li>
+			<ol>
+				<li> Analyze driving cycle. (How many files are there? How is the data organized in the file?) </li>
+				<li> Write program to read one data file and compute: Energy demand per day / Driving distance per day</li>
+				<li> Write program that is suitable for system simulation: Needs to be called from outside the program (function or module) / Decide, at which point in time data is read from file (each time the function is called?). </li>
+				<li> Testing the program </li>
+				<li> Documentation</li>
+			</ol>
+			
+			<li> <a href="sundriver-files/07_Scooter.pdf"> Lecture: Scooter model</a> </li>
+			<li> <a href="sundriver-files/drive_cycle.zip"> The drive cycle</a> </li>
+			<li> <a href="sundriver-files/Steps_Code.zip"> Step by step code</a> </li>
+
+		</ul>
+	
+	</br>	
+	<li> The solar model </li>
+		<ul>
+			<li> Workflow for creating the solar model </li>
+			<ol>
+				<li> Retrieve data from the PVGIS website </li>
+				<li> Reading a data file</li>
+				<li> Converting text to numbers, collect numbers in lists </li>
+				<li> Calculate sums per day </li>
+				<li> Restructure code with function to be called from outside. </li>
+				<li> Add a function to retrieve values for a specific day.</li>
+			</ol>
+			
+			<li> <a href="sundriver-files/08_Solar.pdf"> Lecture: Solar model</a> </li>
+			<li> <a href="sundriver-files/solar.zip"> Step by step code</a> </li>
+			<li> <a href="sundriver-files/Emden-2023.csv"> Example data for the city of Emden</a> </li>
+			<li> <a href="sundriver-files/Kochi-2023.csv"> Example data for the city of Kochi</a> </li>
+
+		</ul>
+	</br>	
+	<li> The battery model </li>
+	The battery model is a very simple model. It provides two functions: charging and discharging a battery.
+    </br>The following considerations add some more complexity: </br> </br>
+	For the function of discharging:  You cannot discharge more than what is stored. </br>
+    Check, if you want to discharge to much.
+		<ul>
+			<li> YES: Discharge all there is / battery will be empty. </li>
+			<li> NO: You can safely discharge the requested amount. </li>
+		</ul>
+		
+	</br>For the function of charging:  You cannot exceed maximum capacity. </br>
+	Check, if you want to charge to much.
+		<ul>
+			<li> YES: Charge only the amount until you reach maximum capacity. </li>
+			<li> NO: You can safely charge the requested amount. </li>
+		</ul>
+		
+	</br>
+	Here are the files for the battery model:
+	<ul>
+		<li> <a href="sundriver-files/09_Battery.pdf"> Lecture: Battery model</a> </li>
+		<li> <a href="sundriver-files/battery-devolo.zip"> Step by step code</a> </li>
+	</ul>
+   
+    
+	</br>
+	<li> The system model </li>
+	The goal of the lecture project is to create a system software for the design of a PV system. 
+	The PV system collects energy from the sun and stores it in a battery. 
+	An electric scooter shall be charged with this energy for commuting to work (daily drive cycle).
+	</br>
+	The separate component models have been developed in the previous lectures. 
+	Now, we need the following files to start to work on our system model.
+	(You can dowload these 14 files as start-system.zip archive.)
+	</br></br>
+	<ul>
+		<li>batteryscooter.py    (This is a copy of the battery model.) </li>
+		<li>batterysolar.py  (This is a copy of the battery model.) </li>
+		<li>scooter.py </li>
+		<li>solar.py </li>
+		<li>sys01.py  (The start for our system model.) </li>
+	</ul>
+	    
+    </br>
+	Data files:
+	<ul>
+		<li>Emden-2023.csv </li>
+		<li>Kochi-2023.csv </li>
+		<li>day1.dat  ...  day7.dat </li>
+	</ul>
+
+	</br>
+    Here are the files for the system model:
+	<ul>
+		<li> <a href="sundriver-files/10_System.pdf"> Lecture: System model</a> </li>
+		<li> <a href="sundriver-files/SysProgSteps.zip"> Step by step code</a> </li>
+	</ul>
+		
+</ul>
+
+<h3>5. Preparing the final results</h3>
+
+<strong>*** Your task for the final report ***</strong>
+</br></br>
+Question 1):
+</br>
+What is the minimum size of a PV system in order to drive the scooter for a whole year? </br>
+Choose the city of Emden and at least one other city.
+
+</br></br>
+Question 2):</br>
+
+For the results of Question1 -> What is the total cost of driving the scooter – calculated per year? 
+</br>
+Assume the following prices:
+	<ul>
+		<li> Scooter = 350 EUR (incl. battery) </li>
+		<li> Battery = 350 EUR (for PV, size 480 Wh identical to scooter)</li>
+		<li> PV panel = 1 EUR / 1 Watt peak power</li>
+	</ul>
+The cost (CAPEX) are distributed over 10 years, i.e. divide the sum by 10 years to obtain the driving cost.
+</br>
+</br>
+Here are the files for the final system:
+	<ul>
+		<li> <a href="sundriver-files/11_ProjectResults.pdf"> Slides: Final system</a> </li>
+		<li> <a href="sundriver-files/ScooterSysFinal.zip"> Final system model</a> </li>
+	</ul>
+
+</br>
+How to run the program:
+	<ul>
+		<li>You can either use a batch file with the line 'python runsystem.py > output.txt' or </li>
+		<li>Open the Windows PowerShell, navigate to the correct directory and type 'python runsystem.py'. </li>
+	</ul>
+
+Steps to be taken:
+	<ol>
+		<li>Open the file 'runsystem.py' in NotePad++ </li>
+		<li>In line 13 set the size of PV system. </li>
+		<li>In line 20 set the number for the correct city. </li>
+		<li>Run the program. </li>
+		<li>Check the HTML pages 'results-energy.html' and 'results-battery.html' for output. </br>
+			(Remember to reload the pages, if new output was generated.) </li>
+	</ol>
+
+    
+    
+
+
+
+
+
+<hr>
+created by Uwe Reimer (Emden, Germany), July 2026 // Creative Commons license CC BY //

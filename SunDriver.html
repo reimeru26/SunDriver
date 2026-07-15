@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <title>SunDriver</title>
+</head>
+
+<meta name="author" content="Uwe Reimer" />
+<meta
+  name="description"
+  content="This is part of a lecture at the University of Applied Sciences Emden/Leer Germany, December 2025." />
+
+  
+  
+<table>
+	
+  <tr>
+    <td>  <img src="sundriver-files/sundriver-sm.png"  style="width: 200px;" /> </td>
+    <td> &emsp; &emsp; <h1>SunDriver</h1> </td>
+  </tr>
+  
+  <table>
+  
+<h2>What is SunDriver?</h2> 
+SunDriver is two things: 
+<ul>
+  <li>a Python software for the design of a photovoltaic system that charges a scooter </li>
+  <li>a lecture once held at the University of Applied Sciences Emden/Leer, Germany</li>
+</ul>
+
+<h2>The software</h2> 
+The software package is here: <a href="sundriver-files/ScooterSysFinal.zip">ScooterSysFinal.zip</a>, 
+please check the lecture page for step by step documentation.
+</br> 
+The following software needs to be installed on your computer:
+<ul>
+	<li>Python (version 3.12.4 was used for development)</li>
+	<li> <a href="https://matplotlib.org/stable/">Matplotlib for Python</a> </li>
+</ul>
+
+SunDriver calculates local power generation by a photovoltaic system. The power is stored
+in a battery. The battery is used to charge an electric scooter based on a drive cycle per week.
+The location for the photovoltaic system can be choosen from anywhere in the world.
+The data for PV power production is retrieved from an external website: 
+<a href="https://re.jrc.ec.europa.eu/pvg_tools/en/">PHOTOVOLTAIC GEOGRAPHICAL INFORMATION SYSTEM (PVGIS)</a>.
+</br>
+
+For PVGIS, choose:
+<ul>
+	<li>HOURLY DATA</li>
+	<li>PV Power</li>
+	<li>Installed Peak PV power = 1 kWp</li>
+</ul>
+
+The data needs to be exported as *.csv file. The overall layout of the system can be seen in the following picture.
+</br><img src="sundriver-files/system.jpg" style="width: 600px;"  /> </br>
+
+
+
+
+
+<h2>The lecture</h2> 
+The full lecture can be found <a href="SunDriver-lecture.html">on a separate page</a>. </br>
+
+<ul>
+	<li>Duration: 1 semester (in combination with project management (not included here)</li>
+	<li>Level: Bachelor or Master in Engineering, Material Science, Physics, Chemistry</li>
+	<li>Requirements: NO prior knowledge of programming, it starts at zero</li>
+	<li>Final goal: students should be able to write small programs (read data from file, process data, write output to file) and generate output with graphs and HTML pages </li>
+</ul>
+
+Motivation: </br>
+Most students in Engineering need some skills in programming. This course targets at those,
+who want to have a minimum setup: just a computer with a plain text editor. No software licences
+to be paid, all things are freely available. The course is intended to be taught and not 
+primarily for self study. All programming examples are included - step by step.
+
+
+<hr>
+created by Uwe Reimer (Emden, Germany), July 2026 // Creative Commons license CC BY //
